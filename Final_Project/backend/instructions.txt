@@ -1,0 +1,60 @@
+-------------------- Node_Modules --------------------
+Run this in the backend folder to set up node_modules:
+    npm install
+
+
+
+-------------------- MongoDB --------------------
+---------- Import (Requires MongoDB Tools) ----------
+Navigate to the backend directory (or update the relative directory below to match),
+then run this command:
+    mongorestore --db secoms319 ./Data/secoms319
+
+To export the updated database, within backend folder, do:
+    mongodump --uri="mongodb://localhost:27017/secoms319" --out=./Data
+
+---------- Manual (Option 1) ----------
+Add the data provided in the Data folder to MongoDB in the following structure:
+Database name: secoms319
+Collections:
+    1. product_information
+    2. user_accounts
+
+In product_information:
+    Different objects for each brand (i.e. 5 objects for 5 brands)
+
+In user_accounts:
+    Different objects for each user (i.e. 2 objects for 2 users)
+
+---------- Manual (Option 2) ----------
+Take the two JSON files in ./Data/DB_Data:
+    Import both files into MongoDB
+
+Database name: secoms319
+Collections:
+    1. product_information
+    2. user_accounts
+
+
+
+-------------------- Running --------------------
+To run the backend without nodemon (no continuous updates):
+npm start
+
+To run the backend with nodemon (continuous updates):
+npm run dev
+
+
+
+-------------------- Testing --------------------
+To test, use Postman for most operations.
+General URL: http://localhost:8081/api/
+Brand URL: http://localhost:8081/api/brands/
+Users URL: http://localhost:8081/api/users/
+
+For Brands & Users:
+    After the final slash, add the necessary information, such as:
+        * create for creating a user then add the body information to "body"
+            Ex: http://localhost:8081/api/users/create
+        * :email (replace :email with the email addr) for finding, deleting, or updating a user by email then add corresponding information
+            Ex: http://localhost:8081/api/users/:email --> http://localhost:8081/api/users/lroe@iastate.edu

@@ -1,0 +1,441 @@
+[{
+  "_id": {
+    "$oid": "6750fb1ce218b5eebcba268b"
+  },
+  "Name": "Nike",
+  "Logo": "images/logos/nike_logo.png",
+  "Products": [
+    {
+      "Name": "Full-zip Jacket",
+      "Cost": 135,
+      "Type": "Jackets",
+      "Image": "/images/Nike/hoodie.png",
+      "_id": {
+        "$oid": "6758f0f1e218b5eebcba26b7"
+      }
+    },
+    {
+      "Name": "Khakis",
+      "Cost": 85,
+      "Type": "Pants",
+      "Image": "/images/Nike/khakis.png",
+      "_id": {
+        "$oid": "6758f121e218b5eebcba26b8"
+      }
+    },
+    {
+      "Name": "Windbreaker",
+      "Cost": 130,
+      "Type": "Jackets",
+      "Image": "/images/Nike/windbreaker.png",
+      "_id": {
+        "$oid": "6758f12ae218b5eebcba26b9"
+      }
+    },
+    {
+      "Name": "Long Sleeve Shirt",
+      "Cost": 55,
+      "Type": "Shirts",
+      "Image": "/images/Nike/long_sleeve_shirt.png",
+      "_id": {
+        "$oid": "6758f137e218b5eebcba26ba"
+      }
+    },
+    {
+      "Name": "T-Shirt",
+      "Cost": 45,
+      "Type": "Shirts",
+      "Image": "/images/Nike/shirt.png",
+      "_id": {
+        "$oid": "6758f13de218b5eebcba26bb"
+      }
+    },
+    {
+      "Name": "Sweatpants",
+      "Cost": 65,
+      "Type": "Pants",
+      "Image": "/images/Nike/sweatpants.png",
+      "_id": {
+        "$oid": "6758f143e218b5eebcba26bc"
+      }
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6750fb2de218b5eebcba268d"
+  },
+  "Name": "adidas",
+  "Logo": "images/logos/adidas_logo.png",
+  "Products": [
+    {
+      "Name": "Fleece Hoodie",
+      "Cost": 95,
+      "Type": "Sweatshirts",
+      "Image": "/images/addidas/fleece_hoodie.avif",
+      "_id": {
+        "$oid": "6758f203e218b5eebcba26bd"
+      }
+    },
+    {
+      "Name": "Green Sweatpants",
+      "Cost": 65,
+      "Type": "Pants",
+      "Image": "/images/addidas/green_sweatpants.avif",
+      "_id": {
+        "$oid": "6758f209e218b5eebcba26be"
+      }
+    },
+    {
+      "Name": "Grey Shoes",
+      "Cost": 115,
+      "Type": "Shoes",
+      "Image": "/images/addidas/grey_shoe.avif",
+      "_id": {
+        "$oid": "6758f20fe218b5eebcba26bf"
+      }
+    },
+    {
+      "Name": "Red Shoes",
+      "Cost": 105,
+      "Type": "Shoes",
+      "Image": "/images/addidas/red_shoe.avif",
+      "_id": {
+        "$oid": "6758f217e218b5eebcba26c0"
+      }
+    },
+    {
+      "Name": "Puffer Coat",
+      "Cost": 140,
+      "Type": "Jackets",
+      "Image": "/images/addidas/puffer_coat.avif",
+      "_id": {
+        "$oid": "6758f21de218b5eebcba26c1"
+      }
+    },
+    {
+      "Name": "Black Sweatpants",
+      "Cost": 140,
+      "Type": "Pants",
+      "Image": "/images/addidas/sweatpants.avif",
+      "_id": {
+        "$oid": "6758f223e218b5eebcba26c2"
+      }
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6750fb3ce218b5eebcba268f"
+  },
+  "Name": "Old Navy",
+  "Logo": "images/logos/old_navy_logo.png",
+  "Products": [
+    {
+      "Name": "Dress Shirt",
+      "Cost": 40,
+      "Type": "Shirts",
+      "Image": "/images/Old_Navy/dress_shirt.avif",
+      "_id": {
+        "$oid": "6758f233e218b5eebcba26c3"
+      }
+    },
+    {
+      "Name": "Fur Coat",
+      "Cost": 140,
+      "Type": "Jackets",
+      "Image": "/images/Old_Navy/fur_coat.avif",
+      "_id": {
+        "$oid": "6758f23ae218b5eebcba26c4"
+      }
+    },
+    {
+      "Name": "Pea Coat",
+      "Cost": 78,
+      "Type": "Jackets",
+      "Image": "/images/Old_Navy/pea_coat.avif",
+      "_id": {
+        "$oid": "6758f243e218b5eebcba26c5"
+      }
+    },
+    {
+      "Name": "Sequin Pants",
+      "Cost": 60,
+      "Type": "Pants",
+      "Image": "/images/Old_Navy/sequin_pants.avif",
+      "_id": {
+        "$oid": "6758f249e218b5eebcba26c6"
+      }
+    },
+    {
+      "Name": "Shirt",
+      "Cost": 35,
+      "Type": "Shirts",
+      "Image": "/images/Old_Navy/shirt.avif",
+      "_id": {
+        "$oid": "6758f253e218b5eebcba26c7"
+      }
+    },
+    {
+      "Name": "Sweater",
+      "Cost": 80,
+      "Type": "Sweatshirts",
+      "Image": "/images/Old_Navy/sweater.avif",
+      "_id": {
+        "$oid": "6758f258e218b5eebcba26c8"
+      }
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6750fb4ae218b5eebcba2691"
+  },
+  "Name": "Reebok",
+  "Logo": "images/logos/reebok_logo.svg",
+  "Products": [
+    {
+      "Name": "Black and Pink Shoes",
+      "Cost": 110,
+      "Type": "Shoes",
+      "Image": "/images/Reebok/black_pink_shoes.webp",
+      "_id": {
+        "$oid": "6758f265e218b5eebcba26c9"
+      }
+    },
+    {
+      "Name": "Blue Sweatshirt",
+      "Cost": 45,
+      "Type": "Sweatshirts",
+      "Image": "/images/Reebok/blue_sweatshirt.webp",
+      "_id": {
+        "$oid": "6758f269e218b5eebcba26ca"
+      }
+    },
+    {
+      "Name": "Grey Sweatpants",
+      "Cost": 25,
+      "Type": "Pants",
+      "Image": "/images/Reebok/grey_sweatpants.webp",
+      "_id": {
+        "$oid": "6758f26de218b5eebcba26cb"
+      }
+    },
+    {
+      "Name": "Purple Tanktop",
+      "Cost": 35,
+      "Type": "Shirts",
+      "Image": "/images/Reebok/purple_tanktop.webp",
+      "_id": {
+        "$oid": "6758f273e218b5eebcba26cc"
+      }
+    },
+    {
+      "Name": "White Shoes",
+      "Cost": 70,
+      "Type": "Shoes",
+      "Image": "/images/Reebok/white_shoe.webp",
+      "_id": {
+        "$oid": "6758f279e218b5eebcba26cd"
+      }
+    },
+    {
+      "Name": "White Shorts",
+      "Cost": 35,
+      "Type": "Shorts",
+      "Image": "/images/Reebok/white_shorts.webp",
+      "_id": {
+        "$oid": "6758f27de218b5eebcba26ce"
+      }
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6750fb54e218b5eebcba2693"
+  },
+  "Name": "Gymshark",
+  "Logo": "images/logos/gymshark.png",
+  "Products": [
+    {
+      "Name": "Flanel Jacket",
+      "Cost": 80,
+      "Type": "Jackets",
+      "Image": "/images/Gymshark/flanel.webp",
+      "_id": {
+        "$oid": "6758f289e218b5eebcba26cf"
+      }
+    },
+    {
+      "Name": "Hoodie",
+      "Cost": 60,
+      "Type": "Sweatshirts",
+      "Image": "/images/Gymshark/hoodie.webp",
+      "_id": {
+        "$oid": "6758f28fe218b5eebcba26d0"
+      }
+    },
+    {
+      "Name": "Long Sleeve Shirt",
+      "Cost": 45,
+      "Type": "Shirts",
+      "Image": "/images/Gymshark/long_sleeve_shirt.webp",
+      "_id": {
+        "$oid": "6758f294e218b5eebcba26d1"
+      }
+    },
+    {
+      "Name": "Oversized Shirt",
+      "Cost": 40,
+      "Type": "Shirts",
+      "Image": "/images/Gymshark/oversized_shirt.webp",
+      "_id": {
+        "$oid": "6758f29ce218b5eebcba26d2"
+      }
+    },
+    {
+      "Name": "T-Shirt",
+      "Cost": 35,
+      "Type": "Shirts",
+      "Image": "/images/Gymshark/tshirt.webp",
+      "_id": {
+        "$oid": "6758f2a2e218b5eebcba26d3"
+      }
+    },
+    {
+      "Name": "Black Shorts",
+      "Cost": 45,
+      "Type": "Shorts",
+      "Image": "/images/Gymshark/shorts.webp",
+      "_id": {
+        "$oid": "6758f2a7e218b5eebcba26d4"
+      }
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6759bbffe218b5eebcba26db"
+  },
+  "Name": "Under Armour",
+  "Logo": "images/logos/under_armour_logo.png",
+  "Products": [
+    {
+      "Name": "Running Shoes",
+      "Cost": 75,
+      "Type": "Shoes",
+      "Image": "/images/Under_Armour/running_shoes.avif",
+      "_id": {
+        "$oid": "6759bc11e218b5eebcba26dc"
+      }
+    },
+    {
+      "Name": "Black Shorts",
+      "Cost": 30,
+      "Type": "Shorts",
+      "Image": "/images/Under_Armour/black_shorts.avif",
+      "_id": {
+        "$oid": "6759bc96e218b5eebcba26dd"
+      }
+    },
+    {
+      "Name": "Gray Shirt",
+      "Cost": 25,
+      "Type": "Shirts",
+      "Image": "/images/Under_Armour/gray_shirt.avif",
+      "_id": {
+        "$oid": "6759bcd9e218b5eebcba26de"
+      }
+    },
+    {
+      "Name": "Red Fleece Sweatshirt",
+      "Cost": 60,
+      "Type": "Sweatshirts",
+      "Image": "/images/Under_Armour/red_sweatshirt.avif",
+      "_id": {
+        "$oid": "6759bd50e218b5eebcba26df"
+      }
+    },
+    {
+      "Name": "Blue Fleece Hoodie",
+      "Cost": 55,
+      "Type": "Sweatshirts",
+      "Image": "/images/Under_Armour/blue_sweatshirt.avif",
+      "_id": {
+        "$oid": "6759bdb7e218b5eebcba26e0"
+      }
+    },
+    {
+      "Name": "Black Jacket",
+      "Cost": 110,
+      "Type": "Jackets",
+      "Image": "/images/Under_Armour/black_jacket.avif",
+      "_id": {
+        "$oid": "6759be06e218b5eebcba26e1"
+      }
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6759c642e218b5eebcba26e4"
+  },
+  "Name": "Carhartt",
+  "Logo": "images/logos/carhartt_logo.png",
+  "Products": [
+    {
+      "Name": "Black Graphic Hoodie",
+      "Cost": 60,
+      "Type": "Sweatshirts",
+      "Image": "/images/Carhartt/black_graphic_sweatshirt.png",
+      "_id": {
+        "$oid": "6759c64ee218b5eebcba26e5"
+      }
+    },
+    {
+      "Name": "Black Sherpa Jacket",
+      "Cost": 155,
+      "Type": "Jackets",
+      "Image": "/images/Carhartt/black_sherpa_jacket.png",
+      "_id": {
+        "$oid": "6759c656e218b5eebcba26e6"
+      }
+    },
+    {
+      "Name": "Gray Relaxed Pants",
+      "Cost": 55,
+      "Type": "Pants",
+      "Image": "/images/Carhartt/gray_relaxed_pants.png",
+      "_id": {
+        "$oid": "6759c65ee218b5eebcba26e7"
+      }
+    },
+    {
+      "Name": "Green Pocket T-Shirt",
+      "Cost": 25,
+      "Type": "Shirts",
+      "Image": "/images/Carhartt/green_pocket_shirt.png",
+      "_id": {
+        "$oid": "6759c665e218b5eebcba26e8"
+      }
+    },
+    {
+      "Name": "Gray Flannel Shirt",
+      "Cost": 55,
+      "Type": "Shirts",
+      "Image": "/images/Carhartt/gray_flannel_shirt.png",
+      "_id": {
+        "$oid": "6759c66de218b5eebcba26e9"
+      }
+    },
+    {
+      "Name": "Brown Steel Toe Boots",
+      "Cost": 140,
+      "Type": "Shoes",
+      "Image": "/images/Carhartt/brown_steel_toe_boots.png",
+      "_id": {
+        "$oid": "6759c673e218b5eebcba26ea"
+      }
+    }
+  ]
+}]

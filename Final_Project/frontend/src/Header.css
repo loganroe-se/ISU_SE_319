@@ -1,0 +1,77 @@
+.custom-navbar {
+    background-color: #8b89e6;
+    padding: 0.8rem 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    padding-top: 70px;
+}
+
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.custom-brand {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.custom-brand:visited {
+    color: white;
+}
+
+.custom-brand:active {
+    color: white;
+}
+
+.custom-brand:hover {
+    color: #03045e;
+}
+
+.custom-nav-link {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.custom-nav-link:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.custom-nav-link:active {
+    text-decoration: none;
+    color: white;
+}
+
+.custom-nav-link:hover {
+    text-decoration: none;
+    color: #03045e;
+}
+
+.log-check-btn {
+    background-color: white;
+    color: #7878fa;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 1.2rem;
+}
+
+.log-check-btn:hover {
+    background-color: #e4e3f9;
+    color: #7878fa;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Activity17</title>
+</head>
+<body>
+    <h1>Get robots</h1>
+    <button onclick="getRobots()">Show All robots</button>
+    <hr>
+    <h1>Output:</h1>
+    <pre id="showRobots"></pre>    
+</body>
+<script>
+    function getRobots() {
+        fetch("http://localhost:8081/listRobots")
+        .then(response => response.json())
+        .then(robots => 
+            {
+                var container = document.getElementById("showRobots");
+                container.textContent = JSON.stringify(robots, undefined, 2);
+                displayRobots(container, robots);
+            })
+        .catch(err => console.log("Error: " + err))
+    }
+
+    function displayRobots(container, robots) {
+        for (var i = 0; i < robots.length; i++) {
+            let name = robots[i].name;
+            let price = robots[i].price;
+            let description = robots[i].description;
+            let imageURL = robots[i].imageUrl;
+            
+            let newDiv = document.createElement("div");
+            newDiv.innerHTML = `<h2>${name}</h2>${price}<br>${description}<br><img src=${imageURL}>`;
+            container.appendChild(newDiv);
+        }
+    }
+</script>
+</html>

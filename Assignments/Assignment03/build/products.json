@@ -1,0 +1,45 @@
+[
+    {
+        "ID": 1,
+        "Name": "Full-zip Jacket",
+        "Cost": 135.00,
+        "Image": "images/hoodie.png",
+        "Description": "temp"
+    },
+    {
+        "ID": 2,
+        "Name": "Khakis",
+        "Cost": 85.00,
+        "Image": "images/khakis.png",
+        "Description": "temp"
+    },
+    {
+        "ID": 3,
+        "Name": "Windbreaker",
+        "Cost": 130.00,
+        "Image": "images/windbreaker.png",
+        "Description": "temp"
+    },
+    {
+        "ID": 4,
+        "Name": "Long Sleeve Shirt",
+        "Cost": 55.00,
+        "Image": "images/long_sleeve_shirt.png",
+        "Description": "temp"
+    },
+    {
+        "ID": 5,
+        "Name": "T-Shirt",
+        "Cost": 45.00,
+        "Image": "images/shirt.png",
+        "Description": "temp"
+    },
+    {
+        "ID": 6,
+        "Name": "Sweatpants",
+        "Cost": 65.00,
+        "Image": "images/sweatpants.png",
+        "Description": "temp"
+    }
+
+]

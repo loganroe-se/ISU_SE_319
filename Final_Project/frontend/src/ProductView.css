@@ -1,0 +1,49 @@
+.verticalLine-right {
+    border-right: 1px solid black;
+}
+
+.verticalLine-left {
+    border-left: 1px solid black;
+}
+
+.d-flex.w-100 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.search-bar {
+    max-width: 30%;
+    padding: 0.5rem;
+    border-radius: 20px;
+}
+
+.sort-by-dropdown {
+    max-width: 300px;
+    padding: 0.5rem;
+    border-radius: 20px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.filters {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+}
+.filters h5 {
+    margin-bottom: 15px;
+}
+.filters .list-group-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    padding: 6px 0;
+}

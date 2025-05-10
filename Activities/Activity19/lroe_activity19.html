@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Activity 19</title>
+    <script src="lroe_activity19_frontend.js"></script>
+    <style>
+        body {
+            padding: 20px;
+        }
+
+        .headers {
+            margin-top: 100px;
+        }
+
+        hr {
+            border: 0;
+            border-top: 2px solid #000;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Best Robots</h1><hr>
+    <!-- Copy from Album - Bootstrap -->
+    <button onclick="listAllRobots()">Display All Robots</button><br><br>
+    <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+            <div id="col" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Copy from Album - Bootstrap -->
+    <h1 class="headers">Get One Robot</h1><hr>
+    <input id="robotId" placeholder="Enter Robot ID">
+    <button onclick="showOneRobot()">One Robot:</button><br><br>
+    <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+            <div id = "col2" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+                
+            </div>
+        </div>
+    </div><br>
+
+    <!-- Add a new Robot -->
+    <h1 class="headers">Create a Robot</h1><hr>
+    <form id="add_robot">
+        <label for="robot_id">Robot ID:</label>
+        <input type="text" id="robot_id" name="input_robot_id"><br><br>
+        <label for="robot_name">Robot Name:</label>
+        <input type="text" id="robot_name" name="input_robot_name"><br><br>
+        <label for="robot_price">Robot Price:</label>
+        <input type="text" id="robot_price" name="input_robot_price"><br><br>
+        <label for="robot_description">Robot Description:</label>
+        <input type="text" id="robot_description" name="input_robot_description"><br><br>
+        <label for="robot_image_url">Robot Image URL:</label>
+        <input type="text" id="robot_image_url" name="input_robot_image_url"><br><br>
+        <input type="submit" id="createRobot" name="createRobot" value="Create the Robot" onclick="addRobot()">
+    </form><br>
+
+    <!-- DELETE BY ID -->
+    <h1 class="headers">Delete a Robot</h1><hr>
+    <input type="number" id="deleteId" placeholder="Enter Robot ID">
+    <button id="deleteButton" onclick="deleteOneRobot()">Delete Robot:</button><br><br>
+    <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+            <div id = "col4" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- UPDATE Robot -->
+    <h1 class="headers">Update a Robot</h1><hr>
+    <label for="updateId">Robot ID to Edit:</label>
+    <input type="number" id="updateId" placeholder="Enter Robot ID"><br><br>
+    <h4 style="margin-bottom: 20px">One or more fields below must have a value.</h4>
+    <form id="update_robot">
+        <label for="update_robot_name">Robot Name:</label>
+        <input type="text" id="update_robot_name" name="input_robot_name"><br><br>
+        <label for="update_robot_price">Robot Price:</label>
+        <input type="text" id="update_robot_price" name="input_robot_price"><br><br>
+        <label for="update_robot_description">Robot Description:</label>
+        <input type="text" id="update_robot_description" name="input_robot_description"><br><br>
+        <label for="update_robot_image_url">Robot Image URL:</label>
+        <input type="text" id="update_robot_image_url" name="input_robot_image_url"><br><br>
+        <input type="submit" id="createRobot" name="createRobot" value="Update the Robot" onclick="updateOneRobot(event)">
+    </form><br>
+    <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+            <div id = "col5" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+
+            </div>
+        </div>
+    </div>
+    
+
+
+    <br><p>Name: Logan Roe<br>
+    ISU NetID: lroe@iastate.edu<br>
+    Date: 11/13/2024</p>
+</body>
+</html>

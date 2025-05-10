@@ -1,0 +1,7 @@
+.custom-card {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.custom-card:hover {
+    background-color: #a9a9a9 !important;
+}

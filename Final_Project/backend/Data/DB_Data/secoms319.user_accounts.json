@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "6750fda7e218b5eebcba2699"
+  },
+  "username": "Logan",
+  "email": "lroe@iastate.edu",
+  "password": "temp"
+},
+{
+  "_id": {
+    "$oid": "6751071b0fdec9c8c409b127"
+  },
+  "username": "Test update",
+  "email": "testuser@example.com",
+  "password": "newPass"
+},
+{
+  "_id": {
+    "$oid": "6758cd6b1c00a0389eea3e56"
+  },
+  "username": "asdf",
+  "email": "asdf@gmail.com",
+  "password": "asdf"
+}]

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logan Roe</title>
+    <style>
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        .project {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+
+        .img-holder {
+            text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">About Me</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Calculator Using FPGA Boards</h3>
+            <p>My partner, Zachary Foote, and I worked together to develop a base-level calculator on an FPGA (Field Programmable Gate Arrays) board. 
+                This calculator accepted user input from the buttons and switches on the board while giving output via the six LED screens. 
+                This entire project was done in VHDL code and block diagram files with block diagram files usually looking like both figures 1 and 2. 
+                Importantly, the final block diagram can be seen in Figure 1.</p>
+            <p>User input works by taking in sixteen inputs based on the sixteen left-most switches on the bottom left-hand corner of the board in Figure 3. 
+                These sixteen inputs work in the following fashion: The leftmost switch is for a 0, the next one to the right is a 1, the one after that is a 2, 
+                and so on. For this to work, a number can be chosen by simply flipping a switch into the up position to select that specific decimal value. 
+                If multiple switches are flipped at the same time, the leftmost (closest value to zero) is prioritized. Further, three rocker switches 
+                (a basic switch with the same functionality as the bottom-left switches), which were located on a daughter board not shown in Figure 3, 
+                were used to determine addition/subtraction, push/pop, and which set of four values to display. The addition/subtraction switch simply chooses 
+                between addition (0) and subtraction (1), the push/pop switch determines whether to “push” items, put items onto the list of stored numbers, 
+                or “pop” items, which allows for an operation (add/subtract), to occur, and the switch to decide what four values will be displayed will be 
+                explained more shortly.</p>
+            <p>Outputs work by taking in the user inputs and providing output in two main different ways, via LEDs and seven-segment displays. 
+                There were eight total registers (figure 2) to store values meaning that the calculator could hold eight total numbers at any given time, 
+                up to fifteen and down to zero in each as all values were to be displayed in hexadecimal. We decided to use some of the seven-segment 
+                displays for other purposes so we were left with only the four right-most seven-segment displays on the FPGA board (figure 3) to display 
+                eight values. To handle this, we decided to implement a rocker switch input which, if zero, displays the first four values, and, if one, 
+                displays the last four values. Since this could get confusing, we decided to use the LED lights under the screens to show which screen is 
+                currently active (i.e. what screen will currently be pushed/popped if an operation were to take place). Furthermore, we also dedicated another 
+                seven-segment display to show which value the user currently has selected. Importantly, since we had a minimum and maximum, we would have to 
+                tell the user when a number exceeded these limitations. To do this, we used LEDs to show overflow (when a number exceeded 15, F in hex) and 
+                underflow (when a number went below 0, 0 in hex). Finally, one more seven-segment display was used to show the calculated value of any 
+                addition/subtraction operation so that the user could see their result before putting it into any given register to help aid usability.</p>
+            <p>As a final result, we ended up with a calculator that could only go from zero to fifteen, both in results and inputs, do addition/subtraction, 
+                store up to eight values at any given time, and show overflow/underflow. Further, I was able to develop teamwork and time management skills 
+                as well as further developing basic engineering skills such as problem-solving. The skills I learned in this project will help me in the real
+                world when working in groups and designing low-level products.</p>
+            <div class="img-holder">
+                <img src= "./images/project1-img1.webp" alt="The overall block diagram which implements all subcomponents to get the final calculator result."><p>Figure 1: The overall block diagram which implements all subcomponents to get the final calculator result.</p><br>
+                <img src= "./images/project1-img2.webp" alt="Register file (one of the most important subcomponents). This is how values are stored and saved for later use."><p>Figure 2: Register file (one of the most important subcomponents). This is how values are stored and saved for later use.</p><br>
+                <img src= "./images/project1-img3.webp" alt="FPGA (Field Programmable Gate Arrays) board which is what was used to work our calculator on."><p>Figure 3: FPGA (Field Programmable Gate Arrays) board which is what was used to work our calculator on.</p>
+            </div>
+        </div>
+        <div class="project">
+            <h3>CyBot/Robot Design</h3>
+            <p>My group (Daryl Kay, Gavin Rich, and Matthew Brammer) and I worked together to program a robot (CyBot, figure 1) to be able to detect objects, 
+                determine their widths and their location relative to the robot, detect holes, bumps, lines, etc., and display them on a GUI 
+                (graphical user interface) so it could be used remotely. Importantly, all code that was loaded onto the robot was written in C whilst all 
+                GUI code was written in Python.</p>
+            <p>We had to design a robot that could detect objects with the sensor seen on the right-hand sand of Figure 1 which could see items at a range 
+                but had to do it both quickly and accurately, could avoid holes, using sensors on the bottom of the CyBot that would detect when a drop was 
+                found or when a line was being crossed, and could avoid bumping into small objects more than once (since the objects were short, the sensor 
+                on the top-right could not see them, so the bump sensors were used).</p>
+            <p>To detect items at a range, we used both an IR (infrared) sensor and a PING (scans in a cone by sending sonar and determines distance based on 
+                how long it takes to receive a response due to it bouncing off objects) sensor to detect these objects. We had found early on that the PING 
+                sensor was good at being fast, but was not overly accurate. However, the IR sensor was quite slow but was much more accurate. 
+                To combine these, we used a rolling average (calculate an average as values were coming in) to find the rough locations of objects using 
+                the PING sensor. Then, using this information, the IR sensor would go along and scan only the locations in which an object was suspected to be. 
+                In this way, we were able to keep scanning fast but accurate. To accurately determine distance from the robot, since the sensor was further 
+                forwards than the center of the robot, trigonometry was used to calculate the exact distance and angle, relative to the center of the robot, 
+                that an object was at. To avoid holes and going outside of boundaries (denoted by bold white lines), drop sensors on the bottom of the bot 
+                were used which simply provide an interrupt to the program to stop what it is doing so the bot does not drop into a hole or go out of the 
+                border. To avoid bumping small objects more than once, the bump sensors on the front of the robot would give us a fairly accurate idea of 
+                where the smaller object was which we would then make note of on the GUI.</p>
+            <p>For the GUI to work and be user-friendly, it started off with a blank space and just showed the bot itself, with the direction it was facing 
+                also being shown. From there, it would add in lines (as borders) as they were found, short objects as they were bumped into, large and thin 
+                objects as they were scanned (with a difference between the large and thin objects), and holes as they were found. Importantly, it was noted 
+                previously that thin and wide objects were distinguished on the GUI, this was because we knew our final goal was going to be denoted by four 
+                thin objects placed in a square pattern, so, we denoted these differently to help show that this may be the goal. After finding at least 
+                three thin objects in a square pattern, we could be pretty confident that we had found the final destination. Finally, when reaching the 
+                goal, a sound was played via the bot to show that we had reached the destination.</p>
+            <p>Overall, the project resulted in us creating C code to run a CyBot that could detect objects (short, tall, thin, wide), detect holes, 
+                detect lines, and accurately portray all of this on a GUI. The CyBot also was capable of playing sounds to show something such as reaching 
+                the final destination. In the end, I was able to further develop teamwork, communication, and time management skills while also improving 
+                various engineering skills such as programming, problem-solving, creativity/innovation, and more. The skills learned in this project could 
+                be applied to various real-world applications that involve programming, working in teams, and general design of robotic items.</p>
+            <div class="img-holder">
+                <img src= "./images/project2-img1.webp" alt="The CyBot which was programmed during this project."><p>Figure 1: The CyBot which was programmed during this project.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Follow us on:</p>
+        <!-- I know how to change these links to be directed at a personal social media page (simply edit the href to be the proper link)
+             however, I personally do not use social media and do not have any of these accounts, which is why I left these as the default
+             social media pages. -->
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>   
+        <p>&copy; 2024 Logan Roe</p>
+    </footer>
+</body>
+</html>
